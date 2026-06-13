@@ -34,6 +34,8 @@ An **AI coding tutor that reads a student's code and coaches them** — it obser
 </p>
 
 > Private beta in progress — walkthrough available on request.
+>
+> 📖 **[Read the full case study →](https://github.com/jrletner/ai-code-coach-case-study)** — architecture, the AI teaching model, and how it's built.
 
 ### How it uses AI to teach
 
