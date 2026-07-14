@@ -13,38 +13,33 @@
 
 ## 🚀 AI Code Coach &nbsp;<sub>🚧 in active development</sub>
 
-An **AI coding tutor that reads a student's code and coaches them** — it observes, explains, and points the way, but never writes their code for them. I'm building the tutor I wished my own students had.
+An **AI coaching agent that teaches you to code and never writes the code for you.** It reads what you write, grades it against a real rubric, tracks what you've actually mastered, and decides the next lesson from the evidence — a personal tutor that observes, explains, and points the way, but makes *you* write every line.
 
 <p align="center">
   <img src="assets/acc-hero-landing.png" alt="AI Code Coach — a live coaching session" width="100%">
-</p>
-
-**Built with**
-
-<p>
-  <img src="https://img.shields.io/badge/Next.js_16-000000?logo=nextdotjs&logoColor=white" alt="Next.js 16">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Better_Auth-1A1A1A" alt="Better Auth">
-  <img src="https://img.shields.io/badge/Neon_Postgres-008B8B?logo=postgresql&logoColor=white" alt="Neon Postgres">
-  <img src="https://img.shields.io/badge/Drizzle_ORM-C5F74F?logo=drizzle&logoColor=black" alt="Drizzle ORM">
-  <img src="https://img.shields.io/badge/Vercel_AI_SDK_+_Claude-000000?logo=vercel&logoColor=white" alt="Vercel AI SDK + Claude">
-  <img src="https://img.shields.io/badge/Upstash-00E9A3?logo=upstash&logoColor=white" alt="Upstash">
-  <img src="https://img.shields.io/badge/Stripe-635BFF?logo=stripe&logoColor=white" alt="Stripe">
-  <img src="https://img.shields.io/badge/Tailwind-38BDF8?logo=tailwindcss&logoColor=white" alt="Tailwind">
 </p>
 
 > Private beta in progress — walkthrough available on request.
 >
 > 📖 **[Read the full case study →](https://github.com/jrletner/ai-code-coach-case-study)** — architecture, the AI teaching model, and how it's built.
 
-### How it uses AI to teach
+### What it does
 
-The coaching model *is* the product. The system prompt is engineered around a few hard rules:
+- **🚫 Never ghostwrites — a hard constraint.** The agent will not complete, fill in, or hand over a single line of your code. Mid-exercise help explains the *concept* with a worked example in a **different** domain and different variable names, so the answer can't leak. The real solution appears only in the post-submission review.
 
-- **A no-code hard constraint** — the AI never writes, completes, or fills in a single line of the student's code. It reads their code and gives line-specific observations; any worked example uses a *different* domain and variable names so it can't leak the answer.
-- **Socratic by design** — instead of handing over a solution, it asks the next guiding question and lets the student write it. (See the FizzBuzz exchange below.)
-- **Adapts to the learner** — selectable learning style (visual, with auto-generated Mermaid diagrams; step-by-step; or Socratic), four skill levels, and a strictness/tone dial from warm-and-encouraging to direct-and-unsparing.
-- **Prompt-injection safe** — student code and rendered output are passed to the model strictly as data, never as instructions, so lesson content can't hijack the coach.
+- **🎓 A four-beat teaching loop.** Every lesson runs **Tell → Show → You Do → I Check**: teach from first principles (jargon defined before use), show a runnable commented example in a *different* scenario than the exercise, hand you a blank file to write yourself, then run your code and grade the real output against the requirement — "it ran" ≠ "it's correct."
+
+- **📊 Evidence-based mastery tracking.** Every skill is scored on a 0–100 rubric (Correctness · Tests · Standards · Readability · Concept grasp) and moved through `not started → learning → practiced → mastered` only on objective evidence: a skill is *mastered* only after **two clean, un-hinted reps on separate, spaced occasions.** No self-certification.
+
+- **🚦 Advancement gates that won't let you skip.** You advance past a lesson only when you score ≥ 60 **and** have no blocking skills below `practiced`. Weak areas trigger targeted re-teaching in a new scenario; proven mastery triggers acceleration (compress drills, offer a test-out). The pace adapts in both directions.
+
+- **🔬 Reads the docs *with* you, not *for* you.** Every library lesson teaches you to decode a real VS Code hover signature into plain English yourself — token by token, rating your own confidence — so your reliance on AI drops instead of growing. Verified against current official docs, never taught from memory.
+
+- **📈 Spaced-repetition + adaptive drills.** Standing commands — `drill me`, `leet me`, `test your skills` — pull what's due from a spacing schedule and weight toward your current weak spots. A read-only `how am I doing?` gives an honest snapshot of scores, gaps, and what's next, any time.
+
+- **🛡️ Learner guardrails that watch for trouble.** Silent detectors for frustration, copy-paste/AI-submitted work (met with "walk me through line N"), perfectionism (every task is time-boxed), and vocabulary gaps — each one changes how the agent teaches on the fly.
+
+- **🗺️ A 16-module curriculum to employment-ready.** A fixed dependency ladder from JavaScript and Git fundamentals through TypeScript, React, full-stack Next.js, databases, auth, testing, security, CI/CD, and a three-app AI portfolio (LLM apps, RAG, and agents) — ending interview-ready in the AI niche.
 
 <p align="center">
   <img src="assets/acc-how-it-works.png" alt="The method: write first, get coached, tuned to you" width="100%">
