@@ -17,11 +17,11 @@
 
 ## 🤖 AI Code Coach Agent &nbsp;<sub>🚧 in active development</sub>
 
-An **AI teaching agent that coaches developers to code — and refuses to write the code for them.** It reads what you write, grades it against a real rubric, tracks what you've *actually* mastered, and picks the next lesson from the evidence. A personal tutor that observes, explains, and points the way — but makes **you** write every line.
+An **AI teaching agent that takes a total beginner and turns them into a self-sufficient developer** — someone who can read, write, and explain their own code without an AI writing it for them. It reads what you write, grades it against a real rubric, tracks what you've *actually* mastered, and picks the next lesson from the evidence. A personal tutor that observes, explains, and points the way — but makes **you** write every line.
 
 Built as an adaptive curriculum that runs inside a real terminal, so it can create files, run your code, and read your git and test output the way a mentor sitting next to you would.
 
-**The point: you actually learn to read and write code yourself — not watch an AI do it for you.**
+**The point: you come in a beginner and leave able to build on your own — you actually learn to write code, not watch an AI do it for you.**
 
 > 📖 **[Read the full case study →](https://github.com/jrletner/ai-code-coach-case-study)** — the design, the pedagogy encoded as enforceable rules, and the file-based architecture.
 
