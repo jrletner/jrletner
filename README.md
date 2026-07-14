@@ -27,6 +27,15 @@ Built as an adaptive curriculum that runs inside a real terminal, so it can crea
 
 ### What it does
 
+<p align="center">
+  <img src="assets/acc-capabilities.png" alt="Twelve capabilities at a glance: never ghostwrites, four-beat loop, evidence-based mastery, advancement gates, reads docs with you, no outdated tutorials, bends to how you learn, spaced repetition, learner guardrails, taught to job demand, git in your hands, 16-module curriculum" width="100%">
+</p>
+
+<details>
+<summary><strong>Read the detail on each →</strong></summary>
+
+<br>
+
 - **🚫 Never ghostwrites — a hard constraint.** The agent will not complete, fill in, or hand over a single line of your code. Mid-exercise help explains the *concept* with a worked example in a **different** domain and different variable names, so the answer can't leak. The real solution appears only in the post-submission review — and trying to fish for it by leaving learn mode doesn't work either.
 
 - **🎓 A four-beat teaching loop.** Every lesson runs **Tell → Show → You Do → I Check**: teach from first principles (jargon defined before use), show a runnable, commented example in a *different* scenario than the exercise, hand you a blank file to write yourself, then run your code and grade the real output against the requirement — because "it ran" is never the same as "it's correct."
@@ -50,6 +59,8 @@ Built as an adaptive curriculum that runs inside a real terminal, so it can crea
 - **✋ Git stays in your hands.** You run every git command yourself (`git init`, `add`, `commit`, `switch`, `merge`); the agent teaches and verifies but never commits for you. Every submission is your own commit on a feature branch.
 
 - **🗺️ A 16-module curriculum to employment-ready.** A fixed dependency ladder from JavaScript and Git fundamentals through TypeScript, React, full-stack Next.js, databases, auth, testing, security, and CI/CD — ending in a three-app AI portfolio (LLM apps, RAG, and agents) and interview readiness in the AI niche. You ship your first live page in week one.
+
+</details>
 
 <p align="center">
   <img src="assets/acc-teaching-loop.png" alt="The four-beat teaching loop: Tell, Show, You Do, I Check" width="100%">
