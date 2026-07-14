@@ -21,6 +21,8 @@ An **AI teaching agent that coaches developers to code — and refuses to write 
 
 Built as an adaptive curriculum that runs inside a real terminal, so it can create files, run your code, and read your git and test output the way a mentor sitting next to you would.
 
+> 📖 **[Read the full case study →](https://github.com/jrletner/ai-code-coach-case-study)** — the design, the pedagogy encoded as enforceable rules, and the file-based architecture.
+
 ### What it does
 
 - **🚫 Never ghostwrites — a hard constraint.** The agent will not complete, fill in, or hand over a single line of your code. Mid-exercise help explains the *concept* with a worked example in a **different** domain and different variable names, so the answer can't leak. The real solution appears only in the post-submission review — and trying to fish for it by leaving learn mode doesn't work either.
