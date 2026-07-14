@@ -21,6 +21,8 @@ An **AI teaching agent that coaches developers to code — and refuses to write 
 
 Built as an adaptive curriculum that runs inside a real terminal, so it can create files, run your code, and read your git and test output the way a mentor sitting next to you would.
 
+**The point: you actually learn to read and write code yourself — not watch an AI do it for you.**
+
 > 📖 **[Read the full case study →](https://github.com/jrletner/ai-code-coach-case-study)** — the design, the pedagogy encoded as enforceable rules, and the file-based architecture.
 
 ### What it does
@@ -35,13 +37,15 @@ Built as an adaptive curriculum that runs inside a real terminal, so it can crea
 
 - **🔬 Reads the docs *with* you, not *for* you.** Every library lesson teaches you to decode a real VS Code hover signature into plain English yourself — token by token, rating your own confidence — so your reliance on AI drops instead of growing.
 
-- **📡 Fresh docs, pulled live — never from memory.** Before any library lesson, the current API is pulled straight from the official docs via **Context7 (MCP)** and pinned to the non-deprecated version (package *names* verified too, not just APIs) — so the course never drifts onto a stale tutorial's version of an API.
+- **📡 No more outdated tutorials. No more deprecated APIs.** Before any library lesson, the current API is pulled *live* from the official docs via **Context7 (MCP)** and pinned to the non-deprecated version — package names verified too, not just methods. You learn the framework as it exists today, not as some three-year-old blog post remembers it.
+
+- **🎚️ Don't like how a lesson lands? Just say so.** Tell the agent how you learn best — visual-first, terse, more examples, slower steps, a different analogy — and it adapts its style, depth, and pace on the fly. The lesson bends to you, not the other way around.
 
 - **📈 Spaced-repetition + adaptive drills.** Standing commands — `drill me`, `leet me`, `test your skills` — pull what's *due* from a spacing schedule and weight toward your current weak spots. A read-only `how am I doing?` gives an honest snapshot of scores, gaps, and what's next, any time.
 
 - **🛡️ Learner guardrails that watch for trouble.** Silent detectors for frustration, copy-paste / AI-submitted work (met with "walk me through line N"), perfectionism (every task is time-boxed), and vocabulary gaps — each one changes *how* the agent teaches on the fly.
 
-- **📊 Taught to real industry demand.** A `market check` command pulls live signal from the Stack Overflow Survey, HN "Who is Hiring," roadmap.sh, and LinkedIn job listings, then maps your skills against what AI-app roles are actually hiring for — and weights the curriculum's depth toward high-demand, within-stack skills. You learn where the job market spends its time, not what's merely fashionable.
+- **💼 Taught to what employers are actually hiring for.** A `market check` command pulls live signal from the Stack Overflow Survey, HN "Who is Hiring," roadmap.sh, and LinkedIn job listings, then maps your skills against what AI-app roles are actually hiring for — and weights the curriculum's depth toward high-demand, within-stack skills. You learn where the job market spends its time, not what's merely fashionable.
 
 - **✋ Git stays in your hands.** You run every git command yourself (`git init`, `add`, `commit`, `switch`, `merge`); the agent teaches and verifies but never commits for you. Every submission is your own commit on a feature branch.
 
